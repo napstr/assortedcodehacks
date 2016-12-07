@@ -18,7 +18,7 @@ class Solution {
 
     public static void main(String args[]) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
-        //Scanner in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\drwho\\10.txt"));
+        //Scanner in = new Scanner(new File("src\\codingame\\drwho\\10.txt"));
         Solution solution = new Solution();
         solution.width = in.nextInt();
         solution.height = in.nextInt();
@@ -78,7 +78,7 @@ class Solution {
     private String determineNotes() {
 
         String result = "";
-        for (Tail t: tails) {
+        for (Tail t : tails) {
             result += " " + identifyNote(t);
         }
         return result;
@@ -227,7 +227,7 @@ class Solution {
 
     /**
      * Looks for tails of the notes
-     *
+     * <p>
      * criteria: X% of a line is a consecutive line of black
      * pretty much copypasta from findLines()
      */
@@ -261,7 +261,7 @@ class Solution {
 
     /**
      * Looks for the five lines
-     *
+     * <p>
      * criteria: X% of a line is black
      */
     private void findLines(double percent) {

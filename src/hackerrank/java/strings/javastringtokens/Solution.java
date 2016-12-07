@@ -1,4 +1,4 @@
-package hackerrank.stringtoken;
+package hackerrank.java.strings.javastringtokens;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,7 +13,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in;
         try {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\javastringtokens\\test"));
+            in = new Scanner(new File("src\\hackerrank\\java\\strings\\javastringtokens\\test"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }

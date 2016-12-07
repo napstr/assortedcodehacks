@@ -15,14 +15,14 @@ public class Solution {
 
         Scanner in;
         try {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\security\\cryptoanalysis\\test"));
+            in = new Scanner(new File("src\\hackerrank\\security\\cryptoanalysis\\test"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }
 
         Scanner dictScan = null;
         try {
-            dictScan = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\security\\cryptoanalysis\\dictionary.lst"));
+            dictScan = new Scanner(new File("src\\hackerrank\\security\\cryptoanalysis\\dictionary.lst"));
         } catch (FileNotFoundException e) {
             try {
                 dictScan = new Scanner(new File("dictionary.lst"));

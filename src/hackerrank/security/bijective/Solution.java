@@ -12,7 +12,7 @@ public class Solution {
 
         Scanner in;
         try {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\security\\bijective\\test"));
+            in = new Scanner(new File("src\\hackerrank\\security\\bijective\\test"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }

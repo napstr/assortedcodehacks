@@ -9,7 +9,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in;
         try {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\security\\keyspaces\\test"));
+            in = new Scanner(new File("src\\hackerrank\\security\\keyspaces\\test"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }
@@ -22,7 +22,7 @@ public class Solution {
             char c = s.charAt(i);
             int x = Integer.valueOf(c + "");
 
-            x ++;
+            x++;
             x %= 10;
 
             result += x;

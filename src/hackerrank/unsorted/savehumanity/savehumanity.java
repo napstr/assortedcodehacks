@@ -1,17 +1,19 @@
 package hackerrank.unsorted.savehumanity;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 class Solution {
 
     public static void main(String[] args) {
         Scanner in;
-        try
-        {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\savehumanity\\t1"));
-        } catch (FileNotFoundException e)
-        {
+        try {
+            in = new Scanner(new File("src\\hackerrank\\unsorted\\savehumanity\\t1"));
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found, using System.in");
             in = new Scanner(System.in);
         }
         int t = in.nextInt();

@@ -2,7 +2,10 @@ package voxcodei;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 class Player {
 
@@ -16,7 +19,7 @@ class Player {
     public static void main(String args[]) throws FileNotFoundException {
 
         Scanner in;
-        if (DEBUG) in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\2.txt"));
+        if (DEBUG) in = new Scanner(new File("src\\codingame\\voxcodei\\2.txt"));
         else in = new Scanner(System.in);
 
         width = in.nextInt(); // width of the firewall grid
@@ -174,7 +177,7 @@ class Player {
 
         for (int y = 0; y < height; y++) {
             result[y] = new Square[width];
-            for (int x = 0; x < width; x++){
+            for (int x = 0; x < width; x++) {
 
                 result[y][x] = map[y][x].copy();
             }
@@ -329,6 +332,7 @@ class Square {
 class Koords {
     int y;
     int x;
+
     public Koords(int y, int x) {
         this.y = y;
         this.x = x;

@@ -13,11 +13,11 @@ class Solution {
 
     public static void main(String args[]) throws FileNotFoundException {
         //Scanner in = new Scanner(System.in);
-        Scanner in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\morse\\4.txt"));
+        Scanner in = new Scanner(new File("src\\codingame\\morse\\4.txt"));
 
         String mc = in.next();
         List<Character> morseCode = new ArrayList<>();
-        for (char c: mc.toCharArray()) morseCode.add(c);
+        for (char c : mc.toCharArray()) morseCode.add(c);
         int w = in.nextInt();
         words = new char[w][];
         for (int i = 0; i < w; i++) {
@@ -52,7 +52,7 @@ class Solution {
             goFullRecurse(morseCode.subList(word.length, morseCode.size()));
         }
     }
-    
+
     private static char[] morsify(String word) {
         String result = "";
 
@@ -143,5 +143,5 @@ class Solution {
             }
         }
         return result.toCharArray();
-    } 
+    }
 }

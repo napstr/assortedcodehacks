@@ -11,7 +11,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in;
         try {
-            in = new Scanner(new File("R:\\Dropbox\\Programmieren\\einsnull\\src\\hackerrank\\security\\bijective\\test"));
+            in = new Scanner(new File("src\\hackerrank\\security\\permutations\\test"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }
