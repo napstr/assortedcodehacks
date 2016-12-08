@@ -14,7 +14,7 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         Scanner in;
         try {
-            in = new Scanner(new FileReader("src\\hackerrank\\java\\datastructures\\javadequeue\\input.txt"));
+            in = new Scanner(new FileReader("src\\hackerrank\\java\\datastructures\\javadequeue\\testcase#1.txt"));
         } catch (FileNotFoundException e) {
             in = new Scanner(System.in);
         }
